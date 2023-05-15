@@ -5,12 +5,12 @@
 * Codigo usado para enviar a leitura de tensão feita pelo módulo ACS712 
 * através da rede LoRa usando o protocolo LoRaWAN para a TTN utilziando a abordagem OTAA
 * 
-* Escrito por Wesley Nóbrega (17/12/2021).
+* Escrito por Wesley Nóbrega (01/04/2023).
 * 
 *******************************************************************************/
 #include <Arduino.h>
-#include <dummy.h>  // silence warnings from Arduino IDE
-// GPS and Sensors
+#include <dummy.h>  // silenciar avisos do Arduino IDE
+// GPS and Sensores
 #include <HardwareSerial.h>
 #include <TinyGPS++.h>
 #include "DHTesp.h"
@@ -31,7 +31,7 @@
 //valor de calibração (deve ser ajustado em paralelo com um multímetro medindo a corrente da carga)
 #define CURRENT_CAL 18.40 
 
-// OLED pin mapping
+// Mapeamento de pinos OLED
 #define OLED_I2C_ADDR 0x3C
 #define OLED_RESET    16
 #define OLED_SDA      4
